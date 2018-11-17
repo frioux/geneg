@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "package main\n"  > eg_generated.go
+echo 'func init() {' >> eg_generated.go
+echo "\t"'compiledAt = "'$(date)'"' >> eg_generated.go
+echo '}' >> eg_generated.go
